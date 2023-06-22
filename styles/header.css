@@ -11,6 +11,7 @@
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
+    position: relative;
     
 }
 
@@ -21,4 +22,33 @@
 
 .container__imagem{
     padding: 1em;
+}
+
+.lista-menu{
+    display:none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.lista-menu__titulo, .lista-menu__item{
+    color: var(--amarelo);
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+
+.lista-menu__link{
+    color:var(--roxo);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.container__botao{
+    display: none;
+}
+
+.container__botao:checked~.lista-menu{
+    display: block;
+
 }
