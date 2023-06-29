@@ -31,8 +31,13 @@
     width: 60vw;
 }
 
+.lista-menu__titulo{
+    font-weight: 700;
+}
+
 .lista-menu__titulo, .lista-menu__item{
     color: var(--amarelo);
+    
     background-color: var(--branco);
     padding: 1em;
 }
