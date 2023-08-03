@@ -37,11 +37,9 @@
 
 .lista-menu__titulo, .lista-menu__item{
     color: var(--amarelo);
-    
     background-color: var(--branco);
     padding: 1em;
 }
-
 
 .lista-menu__link{
     color:var(--roxo);
@@ -55,5 +53,19 @@
 
 .container__botao:checked~.lista-menu{
     display: block;
+}
 
+.container__titulo{
+    display:none;
+}
+@media screen and (min-width: 1024px) {
+    .container__titulo{
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+        font-weight: 400;
+        display: block;
+    }
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
 }
