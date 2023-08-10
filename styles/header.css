@@ -58,6 +58,12 @@
 .container__titulo{
     display:none;
 }
+
+.opções{
+    display: none;
+}
+
+/*VERSÃO TABLET*/
 @media screen and (min-width: 1024px) {
     .container__titulo{
         font-family: var(--fonte-secundaria);
@@ -68,4 +74,29 @@
     .container__titulo--negrito{
         font-weight: 700;
     }
+
+    .opções{
+        display: flex;
+        align-items: center;
+    }
+
+    .opções__item{
+        text-transform: uppercase;
+        padding: 0 1em;
+   }
+   .opções__link{
+        text-decoration: none;
+        color: var(--preto);
+   }
+   .container__imagem--transparente{
+    display: none;
+   }
+
+   .cabecalho__menu-hamburguer{
+    display: none;
+   }
+
+   .opções__botão{
+    display: none;
+   }
 }
